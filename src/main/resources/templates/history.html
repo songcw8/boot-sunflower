@@ -14,17 +14,6 @@
 <div class="container py-5">
     <h1 class="mb-4">선배의 잔소리</h1>
 
-    <form th:action="@{/}" th:object="${promptForm}" method="post" class="mb-5">
-        <div class="input-group">
-            <span class="input-group-text">텍스트</span>
-            <input type="text"
-                   th:field="*{text}"
-                   class="form-control"
-                   placeholder="입력하세요">
-            <button type="submit" class="btn btn-primary">잔소리 듣기</button>
-        </div>
-    </form>
-
     <div th:if="${promptData}" class="card">
         <div class="card-body">
             <h6 class="card-subtitle text-muted mb-3">
